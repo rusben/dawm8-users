@@ -35,15 +35,12 @@ try {
 </form>
 <a href="../">Back</a>
 <?php
-      } else {
-
-        //print_r("ERROR");
-        //print_r("<br/>");
-        //var_dump($user);
-      }
-
-    }
-
+  } else {
+    // print_r("ERROR");
+    // print_r("<br/>");
+    // var_dump($user);
+  }
+}
     // Close connection
     $db = null;
 }
