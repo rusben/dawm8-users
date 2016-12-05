@@ -5,6 +5,7 @@
   Surname: <input name="surname" type="text" value="" /> <br/>
   Registered: <input name="registered" type="text" value="" /> <br/>
   Last Login: <input name="lastLogin" type="text" value="" /> <br/>
-  Password: <input name="password" type="text" value="" /> <br/>
+  Password: <input name="password" type="password" value="" /> <br/>
   <input type="submit" name="doAdd" value="Save"/>
 </form>
+<a href="../">Back</a>
