@@ -24,6 +24,7 @@ try {
     $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
+<a href="view/addForm.php">New</a>
 <table border="1">
   <thead>
     <th>id</th>
@@ -34,6 +35,7 @@ try {
     <th>lastLogin</th>
     <th></th>
   </thead>
+
 <?php foreach ($users as $key => $user) { ?>
     <tr>
       <td><?=$user['id']?></td>
@@ -42,7 +44,8 @@ try {
       <td><?=$user['surname']?></td>
       <td><?=$user['registered']?></td>
       <td><?=$user['lastLogin']?></td>
-      <td><a href="">delete</a> | <a href="">edit</a></td>
+      <td><a href="view/deleteForm.php?id=<?=$user['id']?>">delete</a>
+        | <a href="view/editForm.php?id=<?=$user['id']?>">edit</a></td>
     </tr>
 <?php } ?>
 </table>
